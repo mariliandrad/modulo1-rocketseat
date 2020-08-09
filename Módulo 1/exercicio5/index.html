@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let usuarios = [
+        {
+          nome: "Diego",
+          habilidades: ["Javascript", "ReactJS", "Redux"],
+        },
+        {
+          nome: "Gabriel",
+          habilidades: ["VueJS", "Ruby on Rails", "Elixir"],
+        },
+      ];
+
+      function exibeHabilidades(lista) {
+        for (objeto of lista) {
+          console.log(
+            `O ${objeto.nome} possui as habilidades: ${objeto.habilidades.join(
+              ", "
+            )}.`
+          );
+        }
+      }
+      /*"O " +
+               objeto.nome +
+               " possui as habilidades: " +
+               objeto.habilidades.join(", ")
+           );*/
+
+      exibeHabilidades(usuarios);
+    </script>
+  </body>
+</html>
